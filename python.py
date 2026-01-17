@@ -241,5 +241,11 @@
 # length = len(username)
 # print(length)
 
+# String Indexing 
+# username = "Mohammed Mohsin"
+# first_letter = username[0] # in this we are printing first letter from username
+# print(first_letter)
+# last_letter = username[-1] # in this we are printing last letter from username
+# print(last_letter)
 
 
