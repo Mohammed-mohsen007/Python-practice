@@ -303,3 +303,111 @@
 # result = word1 + word2
 # print(result)
 
+# Exercise 8
+# Write a program that reads two words and prints the resultant word by joining the two words.
+
+# word1 = input("first word: ")
+# word2 = input("second word: ")
+# result = word1 + " " + word2
+# print(result)
+
+# Exercise 9 
+# A job applicant is filling out an application form. 
+# He entered his first name and last name. 
+# Your task is to print his full name by joining his first name and last name with a space.
+
+# first_name = input("Enter Your first name: ")
+# last_name = input("Enter Your last name: ")
+# full_name = first_name + " " + last_name
+# print(full_name)
+
+# Exercise 10
+# write a program that reads the name and age of a person and print them in the given format.
+# Mohsin is 25 years old.
+
+# name = input("Enter your name: ")
+# age = input("Enter your age: ")
+# result = name + " is " + age + " years old." 
+# print(result)
+
+# Exercise 11
+# write a program that reads input and print three times in single line.
+
+# word = input("Enter the word you want to print 3 times: ")
+# result = (word + " ") * 3
+# print("the enter word is printing 3 time => " + result)
+
+# Exercise 12 
+# write a program the returns simple squares using asterisk (*)
+
+# asterisk = "* " * 2
+# print(asterisk)
+# print(asterisk)
+
+# Exercise 13 
+# print a triangle using asterisk (*)
+
+# asterisk = "* " 
+# print(asterisk)
+# print(asterisk * 2)
+
+# Exercise 14
+# Write a program that reads a word and prints the word in "* * * word * * *" format.
+
+# word = input("Enter your word: ")
+# asterisk = "* " * 3
+# result = asterisk + word + " " + asterisk
+# print(result)
+
+# Exercise 15
+# Write a program that reads a word and prints the first character of the word.
+
+# word = input("enter your word: ")
+# result = word[0]
+# print(result)
+
+# Exercise 16
+# take a input and write a program that print a third character of the input.
+
+# word = input("enter your word: ")
+# third_character = word[2]
+# print(third_character)
+
+# Exercise 17 
+# Give four digit number as N input, and write a program to print first and last digit number in two lines.
+
+# number = input("Enter the three digit number: ")
+# first_digit = number[0]
+# last_digit = number[-1]
+# print(first_digit)
+# print(last_digit)
+
+# Exercise 18
+# take an two digit number as input, and reverse that digit like if input is 12 print 21.
+
+# number = input("Enter the two digit number: ")
+# reverse_digit = number[1] + number[0]
+# print(reverse_digit)
+
+# Exercise 19
+# Take an input from the user and find out the length of the input.
+
+# word = input("enter the word: ")
+# length_word = len(word)
+# print(length_word)
+
+# Exercise 20
+# take an input and print the number of asterisk as input length, like "Mohsin" length is 6 print ****** like that.
+
+# username = input("enter the name: ")
+# length_of_username = len(username)
+# asterisk = "* " * length_of_username
+# print(asterisk)
+
+# Exercise 21
+# take an input and print input length -1 like input is (Mohsin and length of the Mohsin is 6 if 6 - 1 = 5)
+
+# username = input("enter the name: ")
+# length_of_username = len(username)
+# result = length_of_username - 1
+# print(result)
