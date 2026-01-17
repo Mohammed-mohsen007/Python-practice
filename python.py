@@ -248,4 +248,57 @@
 # last_letter = username[-1] # in this we are printing last letter from username
 # print(last_letter)
 
+# Exercise 1
+# write a program that reads a single line of input and print the given input
 
+# word = input("Enter Your words: ")
+# print("You have taken Input =>", word)
+
+# Exercise 2
+# write a program that reads a word and prints the word and "###" should be print on two different lines take user input.
+
+# word = input("Enter Your Input")
+# hashed = "#"
+# print(word)
+# print(hashed * 3)
+
+# Exercise 3
+# Write a program that reads the tow words and prints the two words on tow lines
+
+# word1 = input("Enter first word: ")
+# word2 = input("Enter second word: ")
+# print(word1) 
+# print(word2)
+
+# Exercise 4 
+# For this problem, you need to write code to read two lines of input and print the second line of input.
+
+# word1 = input("First word: ")
+# word2 = input("Second word: ")
+# print(word2)
+
+# Exercise 5 
+# Write a program that reads two lines of input and prints 
+# those two lines in the reverse order. 
+# (Print the message given in the second line of input before the first line of input)
+
+# word1 = input("First word: ")
+# word2 = input("Second word: ")
+# print(word2)
+# print(word1)
+
+# Exercise 6 
+# Write a program that takes a word W as input and prints "Hello" followed by the given word W.
+
+# w = input("Enter Your name: ")
+# w2 = "Hello "
+# print(w2 + w)
+
+# Exercise 7
+# For this problem, you need to write code to read 
+# a single line of input and print the line after the message "Given input: ".
+
+# word1 = input("Write Given Input: ")
+# word2 = input("Write your message: ")
+# result = word1 + word2
+# print(result)
