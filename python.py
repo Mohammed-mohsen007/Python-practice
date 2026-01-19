@@ -411,3 +411,102 @@
 # length_of_username = len(username)
 # result = length_of_username - 1
 # print(result)
+
+# Exercise 22 
+# take a input and print the last character of the input
+
+# word = input("Enter the word and it will print last character of the input: ")
+# length_of_word = len(word) - 1
+# print("The last index of word is: ", length_of_word)
+
+# Exercise 23
+# take a input and print the last character of the input
+
+# word = input("enter you word: ")
+# last_character_of_word = word[-1]
+
+# Exercise 24
+# Take an Input and write a program that reads a word and prints the length of the word excluding the first and last character.
+# The output should be an integer excluding the first and last character of the word
+# Example "Mohsin" length is 6, 6-2 is 4 
+
+# word = input("enter your word: ")
+# length_of_word = len(word)
+# result = length_of_word - 2
+# print(result)
+
+# Take a Input and wright a program that reads a word and print first letter of the 
+# given word as (*) instead of the other letter.
+# Example Mohsin => M***** 
+
+# word = input("enter the word: ") # Mohsin
+# length_of_word = len(word) -1
+# first_letter_of_word = word[0]
+# asterisk_of_remaining_word = "*" * length_of_word
+# result = first_letter_of_word + asterisk_of_remaining_word
+# print(result)
+
+# word = input()
+# result = word[0] + (len(word) - 1)* "*"
+# print(result)
+
+# Take a Input and write a program that reads a word and print a half of the word the output should be integer
+# Example Mohsin length is 6 half of 6 is 3 the output should be 3.0 and try to make 3
+
+# word = input("enter your word: ")
+# length_of_word = len(word) / 2
+# print(length_of_word)
+
+# Assignment 1
+
+# Q1 Write a program that prints simple Rectangle using Asterisk (*)
+
+# asterisk = "* "
+# print(asterisk * 2)
+# print(asterisk * 2)
+# print(asterisk * 2)
+
+# Q2 Write a program that prints simple Square shape using Asterisk(*)
+
+# asterisk = "* " * 3
+# print(asterisk)
+# print(asterisk)
+# print(asterisk)
+
+# Q3 Write a program that prints simple Triangle Using Asterisk (*)
+
+# asterisk = "* "
+# print(asterisk)
+# print(asterisk * 2)
+# print(asterisk * 3)
+# print(asterisk * 4)
+
+# Q4 Take an input as word and print the word as given format ****** Python ****** and **** Code ****
+
+# word = input("enter the word: ")
+# length_of_word = len(word)
+# asterisk = ("*" * length_of_word) + " " + word + " " + ("*" * length_of_word)
+# print(asterisk)
+
+# Q5 Take Two inputs as words the second input word1 and word2 and print the index of word1 where the word2 ends the output should be Integer.
+# Example Midterm is word1 and Mid is word2 Mid last index is 2 so the output should be 2, One-Thousand and One-
+
+# word1 = input("first word: ")
+# word2 = input("second word: ")
+# length_word2 = len(word2) -1
+# print(length_word2)
+
+# Q6 Take a Two Inputs A and B and reverse the inputs with separated by ###
+# Example A is Cat B is Rat reverse it and print
+# Rat 
+# ###
+# Cat
+
+# a = input("first word: ")
+# b = input("second word: ")
+# hash = "###"
+# print(b)
+# print(hash)
+# print(a)
+
+
