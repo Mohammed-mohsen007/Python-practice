@@ -509,4 +509,285 @@
 # print(hash)
 # print(a)
 
+# Q7 Take a Input and print the first letter and the last letter of the word.
 
+# word = input("enter your word: ")
+# first_letter_of_word = word[0]
+# last_letter_of_word = word[-1]
+# print(first_letter_of_word)
+# print(last_letter_of_word)
+
+# Q8 Take Three Strings as Input and print first character of each string in same line.
+
+# string1 = input("first string: ")
+# string2 = input("second string: ")
+# string3 = input("third string: ")
+
+# string1 = string1[0]
+# string2 = string2[0]
+# string3 = string3[0]
+# result = string1 + string2 + string3
+# print(result)
+
+# Q9 Take an input as word and print first and last letter character from the word 
+# Example (Mohammed is the input the output should be M******d).
+
+# word = input("enter the word: ")
+# first_character_of_word = word[0]
+# last_character_of_word = word[-1]
+# length_of_word = len(word) -2
+# asterisk = "*" * length_of_word
+# result = first_character_of_word + asterisk + last_character_of_word
+# print(result)
+
+# String Slicing 
+
+# What is String Slicing?
+# Obtaining a part of a string is called string slicing.
+# Syntax of string slicing.
+# variable_name[start_index : end_index]
+# Starts from the start_index and stops at end_index
+# end_index is not included in the slice 
+
+# Example 
+# message = "Hello World"
+# part = message[0 : 5]
+# print(part) # the output is "Hello"
+
+# Slicing to End: If end index is not specified slicing stops at the end of the string.
+
+# Example
+# message = "Hello World"
+# part = message[5 : ]
+# print(part) # the output is World
+
+# Slicing from start: If start index is not specified, slicing start from the index 0.
+# Example 
+# message = "Hello World"
+# part = message[ : 5]
+# print(part) # the output is Hello
+
+# Checking Data Types: Check the datatype of the variable or value using type()
+# Example 
+# print(type("string")) # type of string
+# print(type(10)) # type of integer
+# print(type(float)) # type of float
+# print(type(True)) # type of boolean
+
+
+# Type Conversion 
+
+# What is Type Conversion?
+# Converting the value of one Date Type to another Data Type is know as Type Conversion or Type Casting.
+# We can convert 
+# String to Integer
+# Integer to Float 
+# Float to String and so on..
+
+# String To Integer Conversion
+# int() convert valid data of any value into Integer
+# Example 
+
+# a = "5"
+# a = int(5)
+# print(a)
+
+# Invalid Integer Conversion
+
+# a = "Five"
+# a = int(a)
+# print(a) # ValueError: invalid literal for int()
+
+# Adding two numbers 
+# a = input("enter the number")
+# b = input("enter the number")
+# a = int(a)
+# b = int(b)
+# result = a + b
+# print(result)
+
+# Note Whenever we are taking input by default it is string. If we don't convert the number with integer the output should be different.
+# Example 
+# a = input() # take input as 10
+# b = input() # take input as 10
+# result = a + b 
+# print(result) # the output will come 1010 
+# # This will do string Concatenation 
+
+# Summary 
+# int() => convert into integer DT
+# str() => convert into string DT
+# float() => convert into float DT
+# bool() => convert into boolean DT
+
+
+# coding practice 
+
+# Exercise 1
+# Take a two inputs as number and print the sum of two numbers
+
+# num1 = input("first number: ")
+# num2 = input("second number: ")
+# result = int(num1) + int(num2)
+# print(result)
+
+# Exercise 2
+# Take a two inputs as number and do the division of the two numbers
+
+# num1 = int(input("enter first number: "))
+# num2 = int(input("enter second number: "))
+# result = num1 / num2
+# print(result)
+
+# Exercise 3 
+# Write a program to calculate the area of the rectangle.
+# Note: Area of Rectangle = length of rectangle * Breadth of rectangle 
+# take input as length is 10 and breadth is 2
+
+# length = int(input("enter the length of the rectangle: "))
+# breadth = int(input("enter the breadth of the rectangle: "))
+# area_of_rectangle = length * breadth
+# print(area_of_rectangle)
+
+# Exercise 4 
+# Write a program to calculate a perimeter of rectangle.
+# Note: the formula is p=2(l+w)
+
+# length = int(input("enter the length of rectangle: "))
+# breadth = int(input("enter the breadth of rectangle: "))
+# perimeter_of_rectangle = (length + breadth) * 2
+# print(perimeter_of_rectangle)
+
+# Exercise 5 
+# Take two inputs as numbers and print division of two numbers (num1 / num2) the output should be an integer
+
+# num1 = int(input("enter first number: "))
+# num2 = int(input("inter second number: "))
+# division_of_two_numbers = num1 / num2
+# print(int(division_of_two_numbers))
+
+# Exercise 6
+# Take two inputs as float and print subtraction of two float numbers (num1 - num2 ) the output should be and float.
+
+# num1 = float(input("enter the float number: "))
+# num2 = float(input("enter the float number: "))
+# subtract_of_two_numbers = num1 - num2
+# print(float(subtract_of_two_numbers))
+
+# Exercise 7 
+# Take an input of total class strength and total girls strength and print the percentage of boys.
+
+# class_strength = int(input("Enter the class strength: "))
+# girls = int(input("enter girls strength: "))
+# percentage_of_boys = class_strength * girls / 100
+# percentage_of_boys = int(class_strength - girls)
+# print(percentage_of_boys)
+
+# Exercise 8
+# Take two inputs as float and print the sum of two numbers as given format Sum: 7.0
+
+# num1 = float(input())
+# num2 = float(input())
+# sum_of_two_numbers = num1 + num2
+# print("Sum: " + str(sum_of_two_numbers))
+
+
+# Exercise 9
+# Write a program to take the number of kilometers as input and convert into meters and print the number of meters.
+# Note: 1 Kilometer = 1000 Meters
+
+# kilometers = float(input("enter the kilometers: "))
+# meters = 1000
+# result = int(kilometers) * meters
+# print(result)
+
+# Exercise 10 
+# Write a program that reads input as Dividend and Divisor and print the output Remainder.
+
+# dividend = int(input("Enter the dividend number: "))
+# divisor = int(input("Enter the divisor number: "))
+# quotient = int(dividend / divisor)
+# remainder = dividend - (quotient * divisor)
+# print(remainder)
+
+
+# Exercise 11
+# Take a input as three digit number and print the sum of three digit number.
+
+# num = input("enter the three digit number: ")
+# first_digit = int(num[0])
+# second_digit = int(num[1])
+# third_digit = int(num[2])
+# sum_of_three_digits = first_digit + second_digit + third_digit
+# print(sum_of_three_digits)
+
+# Exercise 12
+# Take a two inputs one is String of greater than 10 letters and another is single digit integer and print the letter of string as integer taken.
+
+# string = input("enter the string: ")
+# integer = int(input("Enter the single digit number: "))
+# result = string[integer]
+# print(result)
+
+# Exercise 13
+# Take a two input one is string and another is integer print a word as number of times on integer.
+
+# word = input("Enter the word: ")
+# integer = int(input("enter the number: "))
+# repetition = word * integer
+# print(repetition)
+
+# Exercise 14
+# Write a program that reads single line of input and print the first three letters of the input.
+
+# word = input("Enter the word: ")
+# first_three_characters = word[0 : 3]
+# print(first_three_characters)
+
+# Exercise 15
+# Take an string input of > 10 and integer of single digit print the last characters of string using starting index as given integer.
+# Example "Unhappy" => is string, "2" is Integer the output is happy.
+
+# string = input("enter the string: ")
+# integer = int(input("enter the integer: "))
+# last_characters_of_string = string[integer : ]
+# print(last_characters_of_string)
+
+# Exercise 16
+# Write a program that reads a word and two indices (X, Y) and 
+# prints a part of the word from the index X to the index Y.
+# Note string should be > 15 characters and the indices should be single digit.
+
+# word = input("enter the words: ")
+# first_index = int(input("enter the first index: "))
+# second_index = int(input("enter second index: "))
+# part_of_word = word[first_index : second_index ]
+# print(part_of_word)
+
+# Exercise 17 
+# Write a program that reads a word and a number N and prints the first N characters of the word.
+
+# word = input("Enter the 10 words: ")
+# num = int(input("enter the single digit number: "))
+# part_of_word = word[ : num]
+# print(part_of_word)
+
+# Exercise 18
+# Write a program that reads a word and a number N and prints the last N characters of the word.
+# Example Forgive bring output give
+
+# word = input("Enter Forgive: ")
+# num = int(input("enter input as 4: "))
+# length_word = len(word) - num
+# part_of_word = word[length_word : ]
+# print(part_of_word)
+
+# Exercise 19
+# Write a program that reads a string and prints the first part of the string that has numbers.The output should be integer.
+
+# word = input("take string as 10y: ")
+# length_of_word = len(word) - 1
+# first_part_of_string = word[ : length_of_word]
+# print(first_part_of_string)
+
+# Coding Practice 1F

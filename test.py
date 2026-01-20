@@ -254,3 +254,258 @@
 # plt.show()
 
 
+# string = "Mohammed Mohsin" \
+# "age is 25 " \
+# "he is a student " \
+# "and also he is working as an intern " \
+# "in sdhub where "
+# print(string)
+
+# st = """Hello my self mohammed Mohsin
+# i did my graduation from Indian school of business management and administration 
+# the university located in 
+# and also """
+
+# print(st)
+
+# Quick Quiz 
+# name = "Harry"
+# print(name[-4:-2])
+
+
+# string = "Mohsin"
+# integer = 5
+# flt = 5.7
+
+# # print(int(string))
+# # print(float(integer))
+# print(str(flt))
+
+# # string = "6"
+# # integer = 8
+# # float = 5.7
+
+# # print(str(string))
+
+# a = 10.8
+# a = int(a)
+# print(a)
+
+# string = "Taj Mahal is located in Agra"
+# num1 = int(8/2)
+# num2 = int("1" + "7")
+# print(num2)
+
+# print(float(2))
+# print(5*5+2*5*6+6*6)
+
+
+
+# Frequency Vs Session Depth
+
+# plt.figure(figsize=(7,5))
+# sns.scatterplor(
+#     data=base_iterl,
+#     x="sessions_per_day",
+#     y="avg_session_minutes",
+#     hue="cluster",
+#     plaette="tab10",
+#     s=20,
+# alpha=0.55
+# )
+
+# plt.title("Iteration 1 (Unscaled) - Frequency vs Session Depth")
+# plt.Legend(box_to_anchor=(1.02, 1))
+# plt.tight_Layout()
+# plt.show()
+
+# # Consistency vs Ad Friction
+# plt.figure(figsize=(7, 5))
+# sns.scatterplot(
+#     data=base_iterl,
+#     x="days_active_last_30",
+#     y="ads_skipped_pct",
+#     hue="Cluster",
+#     palette="tab10",
+#     s=20,
+#     alpha=0.55
+# )
+# plt.title("Iteration 1 (Unscaled) - Consistency vs Ad Friction")
+# plt.Legend(bbox_to_anchor=(1.02, 1))
+# plt.tight_Layout()
+# plt.show()
+
+# # 18) Silhouette Plot (FULL MANUAL)
+
+# sil_values_1 = silhouette_samples(X1, labels1)
+# sil_avg_1 = silhouette_score(X1, labels1)
+# plt.figure(figsize=(7, 5))
+# y_lower = 0
+# vals0 = sil_values_1[labels1 == 0]
+# vals0.sort()
+# size0 = vals0.shape[0]
+# y_upper = y_lower + size0
+# plt.fill_betweenx(
+#     np.arange(y_lower, y_upper),
+#     0,
+#     vals0,
+#     alpha=0.8
+# )
+
+# plt.text(
+#     -0.05,
+#     y_lower + 0.5 * size0,
+#     "Cluster 0"
+# )
+
+# y_lower = y_upper
+
+# # CLUSTER 1
+
+# vals1 = sil_values_1[labels1 == 1]
+# vals1.sort()
+# size1 = vals1.shape[0]
+# y_upper - y_lower + size1
+# plt.fill_betweenx(np.arange(y_lower, y_upper), 0, vals1, alpha=0.8)
+# plt.text(-0.05, y_lower + 0.5 * size1, "cluster 1")
+# y_lower = y_upper
+
+# vals2 = sil_values_1[labels1 == 2]
+# vals2.sort()
+# size2 = vals2.shape[0]
+# y_upper = y_lower + size2
+# plt.fill_betweenx(np.arange(y_lower, y_upper), 0, vals2, alpha=0.8)
+# plt.text(-0.05, y_lower + 0.5 * size2, "Cluster 2")
+# y_lower = y_upper
+
+# vals3 = sil_values_1[labels1 == 3]
+# vals3.sort()
+# size3 = vals3.shape[0]
+# y_uppper = y_lower + size3
+# plt.fill_betweenx(np.arange(y_lower, y_upper), 0, vals3, alpha=0.8)
+# plt.text(-0.05, y_lower + 0.5 * size3, "Cluster 3")
+
+# y_lower = y_upperplt.axvline(
+#     x=sil_avg_1,
+#     color="red",
+#     linestyle="--",
+#     label=f"Avg Silhoutte = {sil_avg_1:.2f}"
+# )
+# plt.title("Silhouette Plot (k=4) - Iteration 1 (Unscaled)")
+# plt.xLabeL("Silhouette Coefficient")
+# plt.yLabeL("Sample index (grouped by cluster)")
+# plt.Legend()
+# plt.tight_Layout()
+# plt.show()
+
+# print("Iteration 1 Avg Silhouette:", round(sil_avg_1, 3))
+
+
+# import numpy as np
+# import pandas as pd
+# import matplotlib.pyplot as plt
+# import seaborn as sns
+# from sklearn.cluster import KMeans
+# from sklearn.preprocessing import StandardScaler
+# from sklearn.metrics import silhouette_score, silhouette_samples
+# sns.set(style="whitegrid")
+# pd.set_option("display.max_columns", None)
+# pd.set_option("display.width", 180)
+# spotify_user_behavior = spark.table("workspace.spotify.soptify_user_behavior").toPandas()
+# CLUSTER_FEATURES_V1 = [
+#     "daily_listening_minutes",    # usage intensity
+#     "sessions_per_day",            # freuency
+#     "days_active_last_30",          # consistency
+#     "avg_session_minutes",          # depth
+#     "skip_rate",                    # content friction
+#     "liked_songs_pct",              # positive engagement
+#     "ads_skipped_pct",              # monetization friction
+# ]
+
+# base = spotify_user_behavior[
+#     ["user_id"] + CLUSTER_FEATURES_V1
+# ].copy()
+# k = 4
+# x1 = base[CLUSTER_FEATURES_V1].copy()
+# scaler = StandardScaler()
+# x2_scaled = scaler.fit_transform(x1)
+# x2 = pd.DateFrame(
+#     x2_scaled,
+#     columns=CLUSTER_FEATURES_V1,
+#     index=base.index
+# )
+# KM2 = KMeans(
+#     n_clusters=k,
+#     random_state=42,
+#     n_init=20,
+#     max_iter=300
+# )
+# labels2 = km2.fit_predict(X2)
+# inertia2 = km2.inertia_
+# sil_avg_2 = silhouette_score(X2, labels2)
+# base_iter2 = base.copy()
+# base_iter2["cluster"] = labels2
+# print(f"\nIteration 2 results | k={k}")
+# print("Inertia  :", round(inertia2, 2))
+# print("Silhouette:", roud(sil_avg_2, 3))
+# sizes2 = base_iter2["cluster"].value_counts().sort_index()
+# means2 = (
+#     base_iter2.groupby("cluster")[CLUSTER_FEATURES_V1]
+#     .mean()
+#     .round(3)
+# )
+# profile2 = means2.copy()
+# profile2.insert(0, "cluster_size", sizes2)
+# print("\nCluster profile (means, original scale) - Iteration 2 (StandrdScaler labels):")
+# display(profile2)
+# plt.figure(figsize=(6, 4))
+# base_iter2["cluster"].value_counts().sort_index().plot(kind="bar")
+# plt.title("Cluster Size - Iteration 2 (StandardScaler)")
+# plt.xLabeL("cluster")
+# plt.yLabeL("Users")
+# plt.show()
+# plt.figure(figsize=(7, 5))
+# sns.scatterplot(
+#     data=base_iter2,
+#     x="daily_listening_minutes",
+#     y="skip_rate",
+#     hue="cluster",
+#     palette="tab10",
+#     s=20,
+#     alpha=0.55,
+#     edgecolor=None
+# )
+# plt.title("Iteration 2 (StandardScaler) - Intensity vs Skip behavior")
+# plt.Legend(title="cluster", bbox_to_anchor=(1.02, 1), loc="upper left")
+# plt.tight_Layout()
+# plt.show()
+# plt.figure(figsize=(7, 5))
+# sns.scatterplot(
+#     data=base_iter2,
+#     x="sessions_per_day",
+#     y="avg_session_minutes",
+#     hue="cluster",
+#     palette="tab10",
+#     s=20,
+#     alpha=0.55,
+#     edgecolor=None
+# )
+# plt.title("Iteration 2 (StandardScaler) - Frequency vs Session Depth")
+# plt.Legend(title="Cluster", bbox_to_anchor=(1.02, 1), loc="upper left")
+# plt.tight_Layout()
+# plt.show()
+
+# # Plot 3: Consistency vs Ad Friction
+# plt.figure(figsize=(7, 5))
+# sns.scatterplot(
+#     data=base_iter2,
+#     x="days_active_last_30",
+#     y="ads_skipped_pct",
+#     hue="cluster",
+# )
+
+
+# total_mark = 2160
+# mark = 1889
+# divided = (1889 / 2160) * 100
+# print(divided)
