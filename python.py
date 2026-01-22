@@ -791,3 +791,66 @@
 # print(first_part_of_string)
 
 # Coding Practice 1F
+
+# Exercise 1
+# Write a program that reads a string and prints the first half part of the string. Note the string length should be even not odd
+# The output should be a single line containing a string that is half of the given string.
+
+# word = input("Enter the Word: ")
+# length_of_word = len(word) / 2
+# length_of_word = int(length_of_word)
+# first_half_of_string = word[ : length_of_word]
+# print(first_half_of_string)
+
+# Exercise 2
+# Take an Inputs word and a number (N), write a program to print the last three characters of the word N times in a single line.
+# The first line of output contains the last three characters of the given word repeated N times.
+# Note: There should not be any spaces between the repetitions.
+
+# word = input("enter the word: ")
+# number = int(input("Enter the number you want to repeat: "))
+# length_of_word = len(word)
+# last_characters_of_word = word[(length_of_word - 3) : ]
+# repetition_of_last_char_of_word = last_characters_of_word * number
+# print(repetition_of_last_char_of_word)
+
+# Exercise 3
+# Take a inputs as string and number. Repeat the same string number of times separated by space.
+
+# word = input("Enter the word: ")
+# number = int(input("Enter the number: "))
+# repetition_of_word = (word + " ") * number
+# print(repetition_of_word)
+
+# Exercise 4
+# Write a program that reads a word and prints the first two and the last two 
+# letters of the word and prints the stars
+# ( of the remaining letters. * ) instead of the remaining letters
+
+# word = input("Enter the word: ")
+# length_of_word = len(word)
+# first_two_characters = word[0 : 2]
+# last_two_characters = word[(length_of_word - 2) : ]
+# asterisk = "*" * (length_of_word - 4)
+# result = first_two_characters + asterisk + last_two_characters
+# print(result)
+
+# Exercise 5
+# Write a program that reads a word and prints the word excluding the fourth letter of the word.
+# The output should be a single line containing a string excluding the fourth letter of the word.
+
+# word = input("enter the word: ")
+# first_four_characters = word[0: 3]
+# last_characters = word[4 : ]
+# skipping_the_fourth_character = first_four_characters + last_characters
+# print(skipping_the_fourth_character)
+
+# Exercise 6
+# You're given a word and an index position of a character. 
+# You need to write a program that prints the given word without the character at the given index.
+
+
+
+
+
+
