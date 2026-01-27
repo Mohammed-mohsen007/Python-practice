@@ -849,8 +849,244 @@
 # You're given a word and an index position of a character. 
 # You need to write a program that prints the given word without the character at the given index.
 
+# word = input("enter your word: ")
+# number = int(input("enter the character number from the given word you want to skip: "))
+
+# first_character_of_word = word[0 : number]
+# skipping_the_fourth_character = word[number + 1 : ]
+# result = first_character_of_word + skipping_the_fourth_character
+# print(result)
 
 
+# String Methods in Python
+
+# String Method's are built-in function in python, it's used to work with strings.
+# String are immutable meaning the original string will unchanged, but it will returns new string without changing original string.
+# Example 
+
+# greeting = "Hello"
+# print(greeting.upper()) # this returns "HELLO" all characters in uppercase, without changing original string.
+# print(greeting) # this returns "Hello" remains same as original string.
+
+# Mostly used string methods
+
+# 1. lower() --> convert into lowercase
+
+# user_email = "Mohsin@123gmail.com"
+# print(user_email.lower())
+# print(user_email)
+
+# 2. upper() --> convert into uppercase
+
+# username_for_upper = "Mohammed Mohsin"
+# print(username_for_upper.upper())
+# print(username_for_upper)
+
+# 3. strip() --> removers extra spaces
+
+# username_for_strip = "   mohsin    "
+# print(username_for_strip.strip())
+# print(username_for_strip)
+
+# and also lstrip() and rstrip()
+
+# lstrip() --> remove left spaces 
+
+# username_for_lstrip = "     Mohammed"
+# print(username_for_lstrip.lstrip())
+# print(username_for_lstrip)
+
+# rstrip() --> removes right spaces
+
+# username_for_rstrip = "Mohsin   "
+# print(username_for_rstrip.rstrip())
+# print(username_for_rstrip)
+
+# 4 replace(old, new) --> this will change the text old to new
+
+# text = "I like Java"
+# print(text.replace("Java", "Python")) # Output: I like Python
+
+# 5 split() --> this will breaks string into List
+
+# text = "Python is easy"
+# print(text.split()) # Output: ['Python', 'is', 'easy']
+
+# 6 join() --> this will convert list into string
+
+# words = ["Python", "is", "awesome"]
+# print("_".join(words)) # Output: Python_is_awesome 
+
+# 7 find() --> shows Index 
+
+# text = "Python"
+# print(text.find("t")) # Output: 2
+
+# 8 count() --> How many times.
+
+# word = "banana"
+# print(word.count("a")) # Output: 3
+
+# startswith() / endswith() --> Result Boolean
+
+# email = "test@gmail.com"
+# print(email)
+# print(email.startswith("test")) # True
+# print(email.endswith(".com")) # True
+# print(email.startswith("mohsin")) # False
+
+# Practice Questions.
+# 1️⃣ Convert "PYTHON" into lowercase
+
+# programming_language = "PYTHON"
+# print(programming_language.lower()) # python
+
+# 2️⃣ Remove spaces from " hello "
+# word = "  hello  "
+# print(word.strip()) # hello --> removes spaces from both side 
+
+# 3️⃣ Count number of "a" in "banana"
+
+# word = "banana"
+# print(word.count("a")) # 3
 
 
+# Medium
 
+# 4️⃣ Replace "Java" with "Python" in "I love Java"
+
+# text = "I love java"
+# print(text.replace("java", "Python")) # I love Python
+
+# 5️⃣ Split "Python is very easy" into words
+
+# text = "Python is very easy"
+# print(text.split()) # ['Python', 'is', 'very', 'easy']
+
+# 6️⃣ Check if email ends with "@gmail.com"
+
+# email = "mohsin@gmail.com"
+# print(email.endswith("@gmail.com")) # True
+
+
+# Hard (Real-World Thinking)
+
+# 7️⃣ Input: " Mohammed Mohsin "
+# 👉 Output: "mohammed mohsin"
+
+# username = input("Enter your name: ")
+# print(username.lower())
+
+# 8️⃣ Input: "2026-01-26"
+# 👉 Convert into list using -
+
+# date = input("Enter the date as same format 2026-01-26: ")
+# print(date.split("-"))
+
+
+# 9️⃣ Find how many words "a" are in a sentence 
+
+# words = input("Enter the words: ")
+# print(words.count("a"))
+
+# Relational Operators 
+# Relational Operators are used to compare the value it returns the boolean result.
+# Types of Relational Operators 
+# > is greater than 
+# < is less than
+# == is equal to
+# >= is greater than or equal to
+# <= is less than or equal to
+# != not equal to 
+
+                            # Coding Practice A2
+
+# Exercise 1
+
+# Take tow inputs and check are the given inputs are equal or same
+
+# word1 = input("Enter the first word: ")
+# word2 = input("Enter second word: ")
+# print(word1 == word2)
+
+# Exercise 2
+# Take two inputs number and check the first number is greater than second number.
+
+# number1 = int(input("enter the first number: "))
+# number2 = int(input("enter the second number: "))
+# print(number1 > number2)
+
+# Exercise 3
+# Take a input as number and check the given input is greater than 70
+
+# number = int(input("enter the number: "))
+# print(number > 70)
+
+# Exercise 4
+# Take two inputs as A and B and check is A greater than or equal to B. and print the result as A >= B is True or False
+
+# number1 = int(input("Enter the first number: "))
+# number2 = int(input("Enter the second number: "))
+# is_greater_or_equal = number1 >= number2
+# print("A >= B is", is_greater_or_equal)
+
+# Exercise 5 
+# Take two inputs numbers and check that the two numbers are not equal.
+
+# number1 = int(input("enter the first number: "))
+# number2 = int(input("enter the second number: "))
+# print(number1 != number2)
+
+# Exercise 6 
+# Take two inputs as number and check the first number is less than or equal to second number.
+
+# number1 = int(input("enter first number: "))
+# number2 = int(input("enter second number: "))
+# print(number1 <= number2)
+
+# Exercise 7 
+# Take an input as number and check the given input is negative or not
+
+# number = int(input("enter the number: "))
+# print(0 > number)
+
+# Coding Practice 2B
+
+# Exercise 1
+# Write a program that reads Password checks the given password is valid or not.The given password has 7 characters then the password is valid, take users input
+
+# password = input("Enter the password: ")
+# print(len(password) > 7)
+
+# Exercise 2
+# Take an Inputs as string and checks if the first three characters are same or not.
+
+# word1 = input("enter the first word: ")
+# word2 = input("enter the second word: ")
+# print(word1[0 : 3] == word2[0 : 3])
+
+# Exercise 3 
+# Take an input as an string and check the first and last characters of string are not same.
+
+# word = input("enter the word: ")
+# print(word[0] != word[len(word) - 1])
+
+# Exercise 4 
+# Take input as two digit number and check the sum of two digit are greater than 7
+
+# number = input("enter the two digit number: ")
+# first_digit = int(number[0])
+# second_digit = int(number[1])
+# sum_of_two_digit = first_digit + second_digit
+# print(sum_of_two_digit > 7)
+
+# Exercise 
+# Take a two inputs as string as A and B checks is last characters is same as B or not.
+# Example A = "Blackhole" B = "hole" check is B is equal to last characters of A.
+
+# word1 = input("enter the first word: ")
+# word2 = input("enter the second word: ")
+# length_of_word1 = len(word1)
+# length_of_word2 = len(word2)
+# is_equal = length_of_word1 - length_of_word2
+# print(word1[is_equal : ] == word2)
